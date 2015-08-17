@@ -1,5 +1,5 @@
 //
-//  NSManagedObjectContext+JSAdditions.h
+//  NSManagedObjectContext+MKBAdditions.h
 //  Mark Bridges
 //
 //  Created by Mark Bridges on 27/01/2015.

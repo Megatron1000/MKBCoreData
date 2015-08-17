@@ -7,14 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreData/CoreData.h>
 
-@import CoreData;
-
-typedef void (^MKBFetchResultsDelegateUpdatedBlock)();
+typedef void (^MKBTableViewFetchedResultsDelegateUpdatedBlock)();
 
 @interface MKBFetchedResultsDelegateForTableViews : NSObject <NSFetchedResultsControllerDelegate>
 
-@property (nonatomic, copy) MKBFetchResultsDelegateUpdatedBlock updatedBlock;
+@property (nonatomic, copy) MKBTableViewFetchedResultsDelegateUpdatedBlock updatedBlock;
 @property (nonatomic, readwrite) BOOL paused;
 @property (nonatomic, weak) UITableView *tableView;
 

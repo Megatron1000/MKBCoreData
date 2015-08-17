@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b4da0795-e74d-44b6-9700-95e5a2adf239" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Pod/Classes/MKBCoreDataInitialiser.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Pod/Classes/MKBCoreDataInitialiser.m" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pod/Classes/ReplaceMe.m" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Example/MKBCoreData.xcodeproj/xcshareddata/xcschemes/MKBCoreData-Example.xcscheme" afterPath="$PROJECT_DIR$/Example/MKBCoreData.xcodeproj/xcshareddata/xcschemes/MKBCoreData-Example.xcscheme" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Example/Pods/Pods.xcodeproj/xcshareddata/xcschemes/MKBCoreData.xcscheme" afterPath="$PROJECT_DIR$/Example/Pods/Pods.xcodeproj/xcshareddata/xcschemes/MKBCoreData.xcscheme" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Example/Pods/Pods.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/Example/Pods/Pods.xcodeproj/project.pbxproj" />
-    </list>
+    <list default="true" id="b4da0795-e74d-44b6-9700-95e5a2adf239" name="Default" comment="" />
     <ignored path="MKBCoreData.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -142,6 +135,7 @@
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="recentsLimit" value="5" />
+    <property name="FullScreen" value="false" />
   </component>
   <component name="RunManager" selected="Application.MKBCoreData-MKBCoreData">
     <configuration default="true" type="AppleRunConfiguration" factoryName="Application" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="_Pods" TARGET_NAME="MKBCoreData" CONFIG_NAME="Debug" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">

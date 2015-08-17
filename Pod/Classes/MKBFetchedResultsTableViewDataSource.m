@@ -43,10 +43,10 @@
 #pragma mark Life Cycle
 
 - (instancetype)initWithTableView:(UITableView *)tableView
-           fetchResultsController:(NSFetchedResultsController *)fetchResultsController
+         fetchedResultsController:(NSFetchedResultsController *)fetchedResultsController
                   cellConfigBlock:(MKBTableViewCellConfigBlock)cellConfigBlock
 {
-    NSAssert(fetchResultsController, @"Fetched results controller cannot be nil");
+    NSAssert(fetchedResultsController, @"Fetched results controller cannot be nil");
     NSAssert(cellConfigBlock, @"Cell config block cannot be nil");
     
     self = [super init];
@@ -55,12 +55,11 @@
         _cellConfigBlock = cellConfigBlock;
         _tableView = tableView;
         _tableView.dataSource = self;
-        _fetchedResultsController = fetchResultsController;
-        _fetchResultsDelegate = [[MKBFetchedResultsDelegateForTableViews alloc]initWithTableView:tableView];
-        _fetchedResultsController.delegate = _fetchResultsDelegate;
+        _fetchedResultsController = fetchedResultsController;
+        _fetchedResultsDelegate = [[MKBFetchedResultsDelegateForTableViews alloc]initWithTableView:tableView];
+        _fetchedResultsController.delegate = _fetchedResultsDelegate;
         __weak typeof(self) weakSelf = self;
-        
-        _fetchResultsDelegate.updatedBlock = ^{
+        _fetchedResultsDelegate.updatedBlock = ^{
             [weakSelf willChangeValueForKey:NSStringFromSelector(@selector(isEmpty))];
             [weakSelf didChangeValueForKey:NSStringFromSelector(@selector(isEmpty))];
         };
@@ -88,7 +87,7 @@
     }
     else if (_pause == YES && pause == NO)
     {
-        self.fetchedResultsController.delegate = self.fetchResultsDelegate;
+        self.fetchedResultsController.delegate = self.fetchedResultsDelegate;
         [self reloadWithError:nil];
     }
     
@@ -98,7 +97,7 @@
 - (void)setTableView:(UITableView *)tableView
 {
     tableView.dataSource = self;
-    self.fetchResultsDelegate.tableView = tableView;
+    self.fetchedResultsDelegate.tableView = tableView;
     _tableView = tableView;
 }
 

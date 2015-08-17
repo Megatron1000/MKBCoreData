@@ -7,12 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
-
-@import CoreData;
+#import <CoreData/CoreData.h>
 
 typedef UICollectionViewCell * (^MKBCollectionViewCellConfigBlock)(UICollectionView *collectionView, NSIndexPath *indexPath, id object);
 
 @interface MKBFetchedResultsCollectionViewDataSource : NSObject <UICollectionViewDataSource>
+
+@property (nonatomic, copy) MKBCollectionViewCellConfigBlock cellConfigBlock;
+@property (nonatomic, strong) NSFetchedResultsController *fetchedResultsController;
+@property (nonatomic, readonly) BOOL isEmpty;
 
 - (instancetype)initWithFetchedResultsController:(NSFetchedResultsController*)fetchedResultsController
                                   collectionView:(UICollectionView*)collectionView

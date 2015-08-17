@@ -12,9 +12,7 @@
 
 @interface MKBFetchedResultsCollectionViewDataSource ()
 
-@property (nonatomic, strong) NSFetchedResultsController *fetchedResultsController;
 @property (nonatomic, strong) MKBFetchedResultsControllerDelegateForCollectionViews *fetchedResultsDelegate;
-@property (nonatomic, copy) MKBCollectionViewCellConfigBlock cellConfigBlock;
 
 @end
 
@@ -31,6 +29,11 @@
         _fetchedResultsDelegate = [[MKBFetchedResultsControllerDelegateForCollectionViews alloc]initWithCollectionView:collectionView];
         _fetchedResultsController.delegate = _fetchedResultsDelegate;
         _cellConfigBlock = cellConfigBlock;
+        __weak typeof(self) weakSelf = self;
+        _fetchedResultsDelegate.updatedBlock = ^{
+            [weakSelf willChangeValueForKey:NSStringFromSelector(@selector(isEmpty))];
+            [weakSelf didChangeValueForKey:NSStringFromSelector(@selector(isEmpty))];
+        };
     }
     
     return self;
@@ -45,6 +48,12 @@
 {
     [NSFetchedResultsController deleteCacheWithName:self.fetchedResultsController.cacheName];
     return [self.fetchedResultsController performFetch:error];
+}
+
+- (BOOL)isEmpty
+{
+    id <NSFetchedResultsSectionInfo> sectionInfo = [[_fetchedResultsController sections] objectAtIndex:0];
+    return ([sectionInfo numberOfObjects] == 0);
 }
 
 #pragma mark - UICollectionView DataSource

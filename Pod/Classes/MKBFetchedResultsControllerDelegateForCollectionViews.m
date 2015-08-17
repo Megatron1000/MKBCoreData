@@ -1,5 +1,5 @@
 //
-//  JSListCollectionViewDataSourceDelegate.m
+//  MKBListCollectionViewDataSourceDelegate.m
 //  Mark Bridges
 //
 //  Created by Mark Bridges on 25/06/2015.
@@ -204,7 +204,12 @@
         {
             [collectionView moveItemAtIndexPath:paths[0] toIndexPath:paths[1]];
         }
-    } completion:nil];
+    } completion:^(BOOL finished) {
+        if (weakSelf.updatedBlock)
+        {
+            weakSelf.updatedBlock();
+        }
+    }];
     
     _objectChanges = nil;
     _sectionChanges = nil;

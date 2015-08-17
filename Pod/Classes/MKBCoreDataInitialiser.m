@@ -1,5 +1,5 @@
 //
-//  JSCoreDataInitialiser.m
+//  MKBCoreDataInitialiser.m
 //  Mark Bridges
 //
 //  Created by Mark Bridges on 27/01/2015.

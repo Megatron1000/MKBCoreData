@@ -8,9 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		07FA36841A93DAC11A69638C7AAFC6FE /* Pods-MKBCoreData_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A635FF2624B44B706C037DC535D0E6B7 /* Pods-MKBCoreData_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4659ED5905DA3D868F2FE6B01EF90F51 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 47A6E9E0FE2273FE0F1EC2127A06007F /* ReplaceMe.m */; };
 		5E19A2103915356D2AC133C481CB897A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F715F0DEEF2EE7452DAC509F863DBB35 /* Foundation.framework */; };
 		7E31415D8788B741C02A013E6E846479 /* MKBCoreData.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 496B1D718B63134742B6DED5CA2108F0 /* MKBCoreData.bundle */; };
+		AB5CBB841B82138B00442A5A /* MKBCoreDataInitialiser.h in Headers */ = {isa = PBXBuildFile; fileRef = AB5CBB821B82138B00442A5A /* MKBCoreDataInitialiser.h */; };
+		AB5CBB851B82138B00442A5A /* MKBCoreDataInitialiser.m in Sources */ = {isa = PBXBuildFile; fileRef = AB5CBB831B82138B00442A5A /* MKBCoreDataInitialiser.m */; };
+		AB5CBB881B8213BA00442A5A /* NSManagedObjectContext+MKBAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = AB5CBB861B8213BA00442A5A /* NSManagedObjectContext+MKBAdditions.h */; };
+		AB5CBB891B8213BA00442A5A /* NSManagedObjectContext+MKBAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = AB5CBB871B8213BA00442A5A /* NSManagedObjectContext+MKBAdditions.m */; };
+		AB5CBB901B82148100442A5A /* MKBFetchedResultsControllerDelegateForCollectionViews.h in Headers */ = {isa = PBXBuildFile; fileRef = AB5CBB8A1B82148100442A5A /* MKBFetchedResultsControllerDelegateForCollectionViews.h */; };
+		AB5CBB911B82148100442A5A /* MKBFetchedResultsControllerDelegateForCollectionViews.m in Sources */ = {isa = PBXBuildFile; fileRef = AB5CBB8B1B82148100442A5A /* MKBFetchedResultsControllerDelegateForCollectionViews.m */; };
+		AB5CBB921B82148100442A5A /* MKBFetchedResultsTableViewDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = AB5CBB8C1B82148100442A5A /* MKBFetchedResultsTableViewDataSource.h */; };
+		AB5CBB931B82148100442A5A /* MKBFetchedResultsTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = AB5CBB8D1B82148100442A5A /* MKBFetchedResultsTableViewDataSource.m */; };
+		AB5CBB941B82148100442A5A /* MKBFetchedResultsDelegateForTableViews.h in Headers */ = {isa = PBXBuildFile; fileRef = AB5CBB8E1B82148100442A5A /* MKBFetchedResultsDelegateForTableViews.h */; };
+		AB5CBB951B82148100442A5A /* MKBFetchedResultsDelegateForTableViews.m in Sources */ = {isa = PBXBuildFile; fileRef = AB5CBB8F1B82148100442A5A /* MKBFetchedResultsDelegateForTableViews.m */; };
+		AB5CBB981B8214B500442A5A /* MKBFetchedResultsCollectionViewDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = AB5CBB961B8214B500442A5A /* MKBFetchedResultsCollectionViewDataSource.h */; };
+		AB5CBB991B8214B500442A5A /* MKBFetchedResultsCollectionViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = AB5CBB971B8214B500442A5A /* MKBFetchedResultsCollectionViewDataSource.m */; };
 		B371502FBD8A07695C710DF2D3E2A263 /* MKBCoreData-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D47A0594D3A42BFEE48973EEEAC0A5E0 /* MKBCoreData-dummy.m */; };
 		D92E4488320F4F2EF36A9D740EFBA162 /* MKBCoreData-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 44189DEFC0553C789697F7CD7521F9DD /* MKBCoreData-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ED8573710ADFAF86213F1CEF79CB0A2F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F715F0DEEF2EE7452DAC509F863DBB35 /* Foundation.framework */; };
@@ -41,7 +52,6 @@
 		2BD303ED0D1406FA03A8662DB6FC360A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		309686FAA4A939385F383A5DB5F803DD /* Pods-MKBCoreData_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MKBCoreData_Tests-resources.sh"; sourceTree = "<group>"; };
 		44189DEFC0553C789697F7CD7521F9DD /* MKBCoreData-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MKBCoreData-umbrella.h"; sourceTree = "<group>"; };
-		47A6E9E0FE2273FE0F1EC2127A06007F /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ReplaceMe.m; sourceTree = "<group>"; };
 		496B1D718B63134742B6DED5CA2108F0 /* MKBCoreData.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MKBCoreData.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		563698028929D4AAF5B43B69EB4D5DE4 /* Pods-MKBCoreData_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MKBCoreData_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		60A3C4B163097C1E2F1036FCAAB94AD3 /* Pods-MKBCoreData_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MKBCoreData_Tests.modulemap"; sourceTree = "<group>"; };
@@ -51,6 +61,18 @@
 		8F2498EC2E1F6D5ECEB32564DF07CB93 /* Pods-MKBCoreData_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MKBCoreData_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		96EC4E4DB197534F4FE4D63B9C405888 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A635FF2624B44B706C037DC535D0E6B7 /* Pods-MKBCoreData_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MKBCoreData_Tests-umbrella.h"; sourceTree = "<group>"; };
+		AB5CBB821B82138B00442A5A /* MKBCoreDataInitialiser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKBCoreDataInitialiser.h; sourceTree = "<group>"; };
+		AB5CBB831B82138B00442A5A /* MKBCoreDataInitialiser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKBCoreDataInitialiser.m; sourceTree = "<group>"; };
+		AB5CBB861B8213BA00442A5A /* NSManagedObjectContext+MKBAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectContext+MKBAdditions.h"; sourceTree = "<group>"; };
+		AB5CBB871B8213BA00442A5A /* NSManagedObjectContext+MKBAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObjectContext+MKBAdditions.m"; sourceTree = "<group>"; };
+		AB5CBB8A1B82148100442A5A /* MKBFetchedResultsControllerDelegateForCollectionViews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKBFetchedResultsControllerDelegateForCollectionViews.h; sourceTree = "<group>"; };
+		AB5CBB8B1B82148100442A5A /* MKBFetchedResultsControllerDelegateForCollectionViews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKBFetchedResultsControllerDelegateForCollectionViews.m; sourceTree = "<group>"; };
+		AB5CBB8C1B82148100442A5A /* MKBFetchedResultsTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKBFetchedResultsTableViewDataSource.h; sourceTree = "<group>"; };
+		AB5CBB8D1B82148100442A5A /* MKBFetchedResultsTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKBFetchedResultsTableViewDataSource.m; sourceTree = "<group>"; };
+		AB5CBB8E1B82148100442A5A /* MKBFetchedResultsDelegateForTableViews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKBFetchedResultsDelegateForTableViews.h; sourceTree = "<group>"; };
+		AB5CBB8F1B82148100442A5A /* MKBFetchedResultsDelegateForTableViews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKBFetchedResultsDelegateForTableViews.m; sourceTree = "<group>"; };
+		AB5CBB961B8214B500442A5A /* MKBFetchedResultsCollectionViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKBFetchedResultsCollectionViewDataSource.h; sourceTree = "<group>"; };
+		AB5CBB971B8214B500442A5A /* MKBFetchedResultsCollectionViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKBFetchedResultsCollectionViewDataSource.m; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C1B51C86FCAB8A1623055DEEEF8D610C /* Pods-MKBCoreData_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MKBCoreData_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		C3E78F7DD3DCBFB25809AC36C95831B4 /* MKBCoreData-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MKBCoreData-prefix.pch"; sourceTree = "<group>"; };
@@ -106,7 +128,18 @@
 		4395F5BC018647F0556D96B83E199F23 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				47A6E9E0FE2273FE0F1EC2127A06007F /* ReplaceMe.m */,
+				AB5CBB821B82138B00442A5A /* MKBCoreDataInitialiser.h */,
+				AB5CBB831B82138B00442A5A /* MKBCoreDataInitialiser.m */,
+				AB5CBB861B8213BA00442A5A /* NSManagedObjectContext+MKBAdditions.h */,
+				AB5CBB871B8213BA00442A5A /* NSManagedObjectContext+MKBAdditions.m */,
+				AB5CBB8A1B82148100442A5A /* MKBFetchedResultsControllerDelegateForCollectionViews.h */,
+				AB5CBB8B1B82148100442A5A /* MKBFetchedResultsControllerDelegateForCollectionViews.m */,
+				AB5CBB8C1B82148100442A5A /* MKBFetchedResultsTableViewDataSource.h */,
+				AB5CBB8D1B82148100442A5A /* MKBFetchedResultsTableViewDataSource.m */,
+				AB5CBB8E1B82148100442A5A /* MKBFetchedResultsDelegateForTableViews.h */,
+				AB5CBB8F1B82148100442A5A /* MKBFetchedResultsDelegateForTableViews.m */,
+				AB5CBB961B8214B500442A5A /* MKBFetchedResultsCollectionViewDataSource.h */,
+				AB5CBB971B8214B500442A5A /* MKBFetchedResultsCollectionViewDataSource.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -214,7 +247,13 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB5CBB881B8213BA00442A5A /* NSManagedObjectContext+MKBAdditions.h in Headers */,
+				AB5CBB841B82138B00442A5A /* MKBCoreDataInitialiser.h in Headers */,
+				AB5CBB941B82148100442A5A /* MKBFetchedResultsDelegateForTableViews.h in Headers */,
+				AB5CBB981B8214B500442A5A /* MKBFetchedResultsCollectionViewDataSource.h in Headers */,
+				AB5CBB921B82148100442A5A /* MKBFetchedResultsTableViewDataSource.h in Headers */,
 				D92E4488320F4F2EF36A9D740EFBA162 /* MKBCoreData-umbrella.h in Headers */,
+				AB5CBB901B82148100442A5A /* MKBFetchedResultsControllerDelegateForCollectionViews.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,8 +365,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB5CBB911B82148100442A5A /* MKBFetchedResultsControllerDelegateForCollectionViews.m in Sources */,
+				AB5CBB891B8213BA00442A5A /* NSManagedObjectContext+MKBAdditions.m in Sources */,
+				AB5CBB931B82148100442A5A /* MKBFetchedResultsTableViewDataSource.m in Sources */,
 				B371502FBD8A07695C710DF2D3E2A263 /* MKBCoreData-dummy.m in Sources */,
-				4659ED5905DA3D868F2FE6B01EF90F51 /* ReplaceMe.m in Sources */,
+				AB5CBB991B8214B500442A5A /* MKBFetchedResultsCollectionViewDataSource.m in Sources */,
+				AB5CBB851B82138B00442A5A /* MKBCoreDataInitialiser.m in Sources */,
+				AB5CBB951B82148100442A5A /* MKBFetchedResultsDelegateForTableViews.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

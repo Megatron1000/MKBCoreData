@@ -1,0 +1,14 @@
+PODS:
+  - MKBCoreData (0.1.0)
+
+DEPENDENCIES:
+  - MKBCoreData (from `../`)
+
+EXTERNAL SOURCES:
+  MKBCoreData:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MKBCoreData: 1a28c89741c7817a2eef4ec51738f5a04fe8e952
+
+COCOAPODS: 0.38.2

@@ -1,0 +1,6 @@
+framework module MKBCoreData {
+  umbrella header "MKBCoreData-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -140,7 +140,6 @@
     if (editingStyle == UITableViewCellEditingStyleDelete)
     {
         [self.fetchedResultsController.managedObjectContext deleteObject:[self.fetchedResultsController objectAtIndexPath:indexPath]];
-        [self.tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
     }
 }
 

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "MKBCoreData"
-  s.version          = "0.3.0"
+  s.version          = "0.3.1"
   s.summary          = "A series of classes to make working with Core Data easier"
 
 # This description is used to generate tags and improve search results.

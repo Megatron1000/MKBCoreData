@@ -75,6 +75,10 @@
 
 - (BOOL)isEmpty
 {
+    if ([_fetchedResultsController sections].count == 0)
+    {
+        return YES;
+    }
     id <NSFetchedResultsSectionInfo> sectionInfo = [[_fetchedResultsController sections] objectAtIndex:0];
     return ([sectionInfo numberOfObjects] == 0);
 }

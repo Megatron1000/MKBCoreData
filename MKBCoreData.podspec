@@ -8,14 +8,14 @@
 
 Pod::Spec.new do |s|
   s.name             = "MKBCoreData"
-  s.version          = "0.3.1"
+  s.version          = "0.3.2"
   s.summary          = "A series of classes to make working with Core Data easier"
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
 #   * Try to keep it short, snappy and to the point.
 #   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!  
+#   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description      = "A series of classes to make working with Core Data easier. This includes a category on NSManagedObjectContext for making fetch requests easier, FetchedResultsController delegates and data sources for TablesViews and CollectionViews as well as helpers for creating the data stack"
 
   s.homepage         = "https://github.com/Megatron1000/MKBCoreData"
